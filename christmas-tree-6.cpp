@@ -6,11 +6,11 @@ int main()
 {
     int n = 0;
     std::cin >> n;
-    for(int i = 0; i < n; i+=2){
-        for(int k = 0; k < i; k+=2){
+    for(int i = n-1; i > -1; i--){
+        for(int k = n; k >= i; k--){
             std::cout << " ";
         }
-        for(int j = n; j >= i+1; j--){
+        for(int j = 0; j < 2*i+1; j++){
             std::cout << "*";
         }
         std::cout << '\n';
